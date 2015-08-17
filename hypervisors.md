@@ -1,7 +1,7 @@
 # What is Xen?
 
 Xen is a type-1 hypervisor like VMware ESXi and Microsoft Hyper-V. Xen
-has the unique ability to to provide a greater level of separation between
+has the unique ability to provide a greater level of separation between
 various components than other hypervisors available. In small deployments,
 Linux users will most often compare Xen to KVM while larger scale deployments,
 will most often be compared to VMware ESXi and OpenStack.
