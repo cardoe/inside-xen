@@ -10,7 +10,7 @@ will most often be compared to VMware ESXi and OpenStack.
 
 Hypervisors were classified by Gerald J. Popek and Robert P. Goldberg in
 their 1974 article "Formal Requirements for Virtualizable Third Generation
-Architectures". The two types the hypervisors they identified are:
+Architectures". The [two types the hypervisors][1] they identified are:
 
 ### Native or Bare Metal or Type-1
 
@@ -33,8 +33,6 @@ to maintain and more portable. Examples of type-2 hypervisors are VMware
 Workstation, Oracle Virtualbox, and QEMU. The downside these types have is
 since they are not in full control of the hardware they are dependent on the
 operating system for resources which can lead to a loss in performance.
-
-https://en.wikipedia.org/wiki/Hypervisor
 
 ## A blended approach
 
@@ -59,3 +57,5 @@ emulate privileged instructions within the hypervisor by dynamically
 rewriting code they looked to replacing this code with less privileged code
 that would notify the hypervisor of the operation it would have performed.
 Then the Xen hypervisor
+
+[1]: https://en.wikipedia.org/wiki/Hypervisor#Classification
