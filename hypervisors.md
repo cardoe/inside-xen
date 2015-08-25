@@ -51,11 +51,14 @@ performance for many workloads with few compromises.
 Xen's roots go back to the time before the x86 instruction set contained
 special instructions to make it possible to virtualize privileged
 instructions. The Xen developers looked at the parts of
-the system that were hard to virtualize given that environment and took
-an approach different to what others had done. Instead of looking to
-emulate privileged instructions within the hypervisor by dynamically
-rewriting code they looked to replacing this code with less privileged code
-that would notify the hypervisor of the operation it would have performed.
-Then the Xen hypervisor
+the system that were hard to virtualize given that environment.
+Primarily these difficult to virtualize components came in the form of
+hardware behaviors and privileged instructions. Instead of looking to
+emulate hardware interfaces within the hypervisor, they instead provided
+a software interface in an operation called paravirtualization [2].
+The result was that difficult to emulate hardware devices were unnecessary
+and the state of the virtualized machine would be updated as if the original
+hardware manipulations had happened faster and without privileged instructions.
 
 [1]: https://en.wikipedia.org/wiki/Hypervisor#Classification
+[2]: https://en.wikipedia.org/wiki/Paravirtualization
