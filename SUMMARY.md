@@ -1,3 +1,3 @@
 # Summary
 
-* [Intro to Hypervisors](hypervisors.md)
+* [An Overview of Hypervisors](hypervisors.md)

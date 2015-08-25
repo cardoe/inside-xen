@@ -1,4 +1,6 @@
-# What is Xen?
+# An Overview of Hypervisors
+
+## What is Xen?
 
 Xen is a type-1 hypervisor like VMware ESXi and Microsoft Hyper-V. Xen
 has the unique ability to provide a greater level of separation between
